@@ -3,35 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website</h1>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="header-inner">
+            <div>
+                <p class="eyebrow">Modern web design</p>
+                <h1>My Portfolio</h1>
+                <p class="lead">A clean, responsive landing page to showcase your work and services.</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
         <section id="home" class="hero">
-            <h2>Hello World</h2>
-            <p>This is a starter template for your website.</p>
+            <div class="hero-content">
+                <h2>Design. Build. Launch.</h2>
+                <p>Welcome to a polished starter page for your next project. Customize the sections below to reflect your brand.</p>
+                <a class="button" href="#contact">Get in touch</a>
+            </div>
         </section>
 
-        <section id="about">
-            <h2>About</h2>
-            <p>Add your content here.</p>
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>I help businesses and creators establish a strong online presence with thoughtful design and clear messaging. This template is built for easy editing and fast deployment.</p>
+        </section>
+
+        <section id="services" class="content-section service-grid">
+            <article class="card">
+                <h3>Web Design</h3>
+                <p>Beautiful, responsive layouts that work on every screen size.</p>
+            </article>
+            <article class="card">
+                <h3>Branding</h3>
+                <p>Clean visual systems to make your project memorable.</p>
+            </article>
+            <article class="card">
+                <h3>Development</h3>
+                <p>Fast, maintainable sites built with modern best practices.</p>
+            </article>
+        </section>
+
+        <section id="contact" class="content-section contact-section">
+            <h2>Contact</h2>
+            <p>Ready to start a project or ask a question? Send a message and let's connect.</p>
+            <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell me more..."></textarea>
+                <button type="submit">Send Message</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 My Website. All rights reserved.</p>
+        <p>&copy; 2026 My Portfolio. All rights reserved.</p>
     </footer>
 </body>
 </html>
